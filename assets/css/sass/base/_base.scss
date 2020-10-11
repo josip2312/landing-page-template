@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500;800&display=swap');
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+
+	@media only screen and(min-width:$v-19) {
+		font-size: 90%;
+	}
+	@media only screen and(min-width:$v-4k) {
+		font-size: 100%;
+	}
+
+	@media only screen and(max-width:$v-10) {
+		font-size: 57.5%;
+	}
+}
+
+body {
+	font-family: 'M PLUS 1p', sans-serif;
+
+	line-height: 1.6;
+	color: var(--white);
+	background-color: var(--white);
+	font-size: 1.6rem;
+
+	overflow-x: hidden;
+	position: relative;
+}
+/*
+////////////////
+typography
+////////////////
+*/
+.heading-1 {
+	font-size: 7.5rem;
+	line-height: 1.2;
+	@media only screen and(max-width:$v-3) {
+		font-size: 6rem;
+	}
+}
+.heading-2 {
+	font-size: 4rem;
+	line-height: 1;
+	font-weight: 500;
+}
+.heading-3 {
+	font-size: 2.5rem;
+	line-height: 1;
+	font-weight: 500;
+}
+.heading-4 {
+	letter-spacing: 1px;
+	font-size: 2.2rem;
+	line-height: 1;
+}
+
+////////////
+//HELPERS
+////////////
+.spacing-sm > * + * {
+	margin-top: 1.5rem;
+}
+.spacing > * + * {
+	margin-top: 2.5rem;
+}
+.spacing-lg > * + * {
+	margin-top: 3.5rem;
+}
+@mixin fillPage {
+	min-height: 91vh;
+	@media only screen and(max-width:$vp-6) {
+		min-height: 82vh;
+	}
+}
