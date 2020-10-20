@@ -271,6 +271,7 @@ typography
 
 .wrapper .nav-toggle svg {
   stroke: var(--white);
+  stroke-width: 2px;
   width: 3.5rem;
   height: 3.5rem;
 }
