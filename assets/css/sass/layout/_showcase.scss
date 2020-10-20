@@ -1,18 +1,14 @@
 .container-showcase {
-	background-color: #5e239d;
-	background: linear-gradient(
-		90deg,
-		rgb(57, 21, 93) 0%,
-		rgb(60, 23, 97) 50%,
-		rgb(81, 29, 138) 100%
-	);
+	background-color: var(--primary);
+
 	background-image: linear-gradient(
 			90deg,
-			rgba(57, 21, 93, 0.89) 0%,
-			rgba(60, 23, 97, 0.925) 50%,
-			rgba(82, 29, 138, 0.89) 100%
+			rgba(57, 21, 93, 0.418) 0%,
+			rgba(60, 23, 97, 0.507) 50%,
+			rgba(82, 29, 138, 0.596) 100%
 		),
 		url(/assets/images/background.jpg);
+	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
 	position: relative;

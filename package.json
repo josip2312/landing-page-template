@@ -1,0 +1,23 @@
+{
+  "name": "landingtemplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josip2312/landing-page-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josip2312/landing-page-template/issues"
+  },
+  "homepage": "https://github.com/josip2312/landing-page-template#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
