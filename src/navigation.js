@@ -2,7 +2,7 @@ const nav = document.querySelector('#nav');
 
 document.body.addEventListener('click', (e) => {
 	const navToggle = document.querySelector('.nav-toggle');
-	const svg = document.querySelector('#hamburger-svg');
+	const svg = document.querySelector('.w-6');
 	const path = svg.children[0];
 
 	if (e.target !== navToggle && e.target !== svg && e.target !== path) {
