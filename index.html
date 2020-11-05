@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<div class="navigation">
-			<div class="wrapper">
+			<div class="wrapper container">
 				<div class="logo">Logo</div>
 				<button class="nav-toggle" aria-label="Menu toggle">
 					<svg id="hamburger-svg" class="w-6 h-6" viewBox="0 0 24 24">
@@ -41,11 +41,25 @@
 					</ul>
 				</nav>
 			</div>
+			<div class="mobile-nav">
+				<a href="#">
+					<img src="/assets/images/icons/home.svg" alt="" />
+					<span> Home </span>
+				</a>
+				<a href="#services">
+					<img src="/assets/images/icons/services.svg" alt="" />
+					<span> Services </span>
+				</a>
+				<a href="#contact">
+					<img src="/assets/images/icons/about-us.svg" alt="" />
+					<span> About </span>
+				</a>
+			</div>
 		</div>
 
 		<main>
 			<div class="container-showcase">
-				<header class="showcase" id="showcase">
+				<header class="showcase container" id="showcase">
 					<div class="showcase-heading spacing">
 						<div class="section-title">What we do?</div>
 						<h1 class="heading-1 primary-title">
@@ -75,7 +89,7 @@
 				</header>
 			</div>
 
-			<section class="intro" id="intro">
+			<section class="intro container" id="intro">
 				<div class="intro-left spacing-lg">
 					<div class="section-title">Intro</div>
 					<h2 class="heading-2 intro-title">
@@ -106,7 +120,7 @@
 			</section>
 
 			<div class="container-benefits">
-				<section class="benefits" id="benefits">
+				<section class="benefits container" id="benefits">
 					<div class="benefits-left spacing-lg">
 						<div class="section-title">Benefits</div>
 						<h2 class="heading-2 benefits-title">
@@ -148,7 +162,7 @@
 			</div>
 
 			<div class="container-services">
-				<section class="services" id="services">
+				<section class="services container" id="services">
 					<div class="services-heading spacing">
 						<div class="section-title">Services</div>
 						<h2 class="heading-2">Our services</h2>
@@ -170,7 +184,7 @@
 									<path
 										stroke-linecap="round"
 										stroke-linejoin="round"
-										stroke-width="2"
+										stroke-width="1.5"
 										d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
 									></path>
 								</svg>
@@ -193,7 +207,7 @@
 									<path
 										stroke-linecap="round"
 										stroke-linejoin="round"
-										stroke-width="2"
+										stroke-width="1.5"
 										d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"
 									></path>
 								</svg>
@@ -216,7 +230,7 @@
 									<path
 										stroke-linecap="round"
 										stroke-linejoin="round"
-										stroke-width="2"
+										stroke-width="1.5"
 										d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
 									></path>
 								</svg>
@@ -241,7 +255,7 @@
 									<path
 										stroke-linecap="round"
 										stroke-linejoin="round"
-										stroke-width="2"
+										stroke-width="1.5"
 										d="M13 10V3L4 14h7v7l9-11h-7z"
 									></path>
 								</svg>
@@ -266,7 +280,7 @@
 									<path
 										stroke-linecap="round"
 										stroke-linejoin="round"
-										stroke-width="2"
+										stroke-width="1.5"
 										d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
 									></path>
 								</svg>
@@ -289,7 +303,7 @@
 									<path
 										stroke-linecap="round"
 										stroke-linejoin="round"
-										stroke-width="2"
+										stroke-width="1.5"
 										d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
 									></path>
 								</svg>
@@ -306,7 +320,7 @@
 				</section>
 			</div>
 
-			<section class="contact" id="contact">
+			<section class="contact container" id="contact">
 				<div class="section-title">Contact</div>
 				<h2 class="heading-2">Let's get in touch</h2>
 				<form class="form spacing-sm">
@@ -335,7 +349,7 @@
 		</main>
 
 		<div class="footer-container">
-			<footer class="footer">
+			<footer class="footer container">
 				<div class="footer-heading spacing-sm">
 					<h3 class="heading-3 footer-title">Lorem ipsum</h3>
 					<div class="footer-paragraph">
@@ -352,11 +366,14 @@
 				<div class="footer-contact">
 					<div class="section-title">Contact</div>
 					<div class="footer-contact-email">
-						<img src="/assets/images/icons/mail.svg" alt="" />
+						<img src="/assets/images/icons/mail.svg" alt="Email" />
 						<span> contact@gmail.com </span>
 					</div>
 					<div class="footer-contact-phone">
-						<img src="/assets/images/icons/phone.svg" alt="" />
+						<img
+							src="/assets/images/icons/phone.svg"
+							alt="Contact"
+						/>
 						<span> 02301310321 </span>
 					</div>
 				</div>
@@ -366,25 +383,25 @@
 						<a href="#">
 							<img
 								src="/assets//images/icons/facebook.svg"
-								alt=""
+								alt="Facebook"
 							/>
 						</a>
 						<a href="#">
 							<img
 								src="/assets//images/icons/instagram.svg"
-								alt=""
+								alt="Instagram"
 							/>
 						</a>
 						<a href="#">
 							<img
 								src="/assets//images/icons/twitter.svg"
-								alt=""
+								alt="Twitter"
 							/>
 						</a>
 						<a href="#">
 							<img
 								src="/assets//images/icons/github-one.svg"
-								alt=""
+								alt="Github"
 							/>
 						</a>
 					</div>

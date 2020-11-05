@@ -1,0 +1,33 @@
+.mobile-nav {
+	@media only screen and(min-width:$v-7 ) {
+		display: none;
+	}
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+
+	background-color: var(--primary);
+	z-index: 100;
+
+	a {
+		flex: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: opacity 0.2s ease-out;
+		padding: 1.35rem 0;
+		img {
+			width: 2rem;
+			margin-right: 0.5rem;
+		}
+	}
+	a:hover {
+		opacity: 0.8;
+	}
+}

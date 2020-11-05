@@ -112,6 +112,24 @@ button {
   --font-para: #776c82;
 }
 
+.spacing-sm > * + * {
+  margin-top: 1.5rem;
+}
+
+.spacing > * + * {
+  margin-top: 2.5rem;
+}
+
+.spacing-lg > * + * {
+  margin-top: 3.5rem;
+}
+
+.container {
+  width: 85%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -121,19 +139,25 @@ html {
 
 @media only screen and (min-width: 116em) {
   html {
-    font-size: 90%;
+    font-size: 70%;
   }
 }
 
 @media only screen and (min-width: 156.25em) {
   html {
-    font-size: 100%;
+    font-size: 85%;
   }
 }
 
 @media only screen and (max-width: 65.625em) {
   html {
     font-size: 57.5%;
+  }
+}
+
+@media only screen and (max-width: 43.75em) {
+  html {
+    font-size: 52.5%;
   }
 }
 
@@ -181,18 +205,6 @@ typography
   line-height: 1;
 }
 
-.spacing-sm > * + * {
-  margin-top: 1.5rem;
-}
-
-.spacing > * + * {
-  margin-top: 2.5rem;
-}
-
-.spacing-lg > * + * {
-  margin-top: 3.5rem;
-}
-
 .section-title {
   font-weight: 800;
   text-transform: uppercase;
@@ -231,9 +243,6 @@ typography
 }
 
 .wrapper {
-  width: 85%;
-  max-width: 120rem;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -361,6 +370,57 @@ typography
   }
 }
 
+.mobile-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: var(--primary);
+  z-index: 100;
+}
+
+@media only screen and (min-width: 43.75em) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
+.mobile-nav a {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+  padding: 1.35rem 0;
+}
+
+.mobile-nav a img {
+  width: 2rem;
+  margin-right: 0.5rem;
+}
+
+.mobile-nav a:hover {
+  opacity: 0.8;
+}
+
 .container-showcase {
   background-color: var(--primary);
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(57, 21, 93, 0.418)), color-stop(50%, rgba(60, 23, 97, 0.507)), to(rgba(82, 29, 138, 0.596))), url(/assets/images/background.jpg);
@@ -372,11 +432,7 @@ typography
 }
 
 .showcase {
-  max-width: 120rem;
-  margin: 0 auto;
   padding: 20em 0;
-  width: 85%;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -463,9 +519,6 @@ typography
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 10rem 0;
-  width: 85%;
-  max-width: 120rem;
-  margin: 0 auto;
 }
 
 @media only screen and (min-width: 59.375em) {
@@ -580,9 +633,6 @@ typography
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 10rem 0;
-  width: 85%;
-  max-width: 120rem;
-  margin: 0 auto;
 }
 
 @media only screen and (min-width: 59.375em) {
@@ -725,9 +775,6 @@ typography
       -ms-flex-align: center;
           align-items: center;
   padding: 10rem 0;
-  width: 85%;
-  max-width: 120rem;
-  margin: 0 auto;
 }
 
 .services-heading {
@@ -829,9 +876,6 @@ typography
 
 .contact {
   padding: 10rem 0;
-  width: 85%;
-  max-width: 120rem;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -918,9 +962,6 @@ typography
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 85%;
-  max-width: 120rem;
-  margin: 0 auto;
 }
 
 .footer .section-title {

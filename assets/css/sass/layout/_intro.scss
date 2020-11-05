@@ -6,9 +6,6 @@
 	flex-direction: column;
 
 	padding: 10rem 0;
-	width: 85%;
-	max-width: 120rem;
-	margin: 0 auto;
 
 	@media only screen and(min-width:$v-9) {
 		flex-direction: row;
