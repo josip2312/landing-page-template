@@ -24,8 +24,9 @@
 	background-color: var(--primary);
 	align-items: flex-start;
 	padding: 3rem 5rem;
+	border-radius: 0.5rem;
 	@media only screen and(max-width:$v-5) {
-		padding: 3rem 2.5rem;
+		padding: 3rem 2rem;
 	}
 	.form-group {
 		display: block;
