@@ -1,81 +1,83 @@
 .intro {
-	background-color: var(--white);
-	color: var(--font-header);
+    background-color: var(--white);
+    color: var(--font-header);
 
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
-	padding: 10rem 0;
+    padding: 5rem 0;
 
-	@media only screen and(min-width:$v-9) {
-		flex-direction: row;
-	}
+    @media only screen and(min-width:$v-9) {
+        padding: 10rem 0;
+        flex-direction: row;
+    }
 }
 
 .intro-left {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+    --spacer: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-	.intro-title,
-	.intro-subtitle,
-	.intro-paragraph {
-		width: 100%;
-		max-width: 50rem;
-	}
+    .intro-title,
+    .intro-subtitle,
+    .intro-paragraph {
+        width: 100%;
+        max-width: 50rem;
+    }
 
-	.section-title {
-		color: var(--accent);
-	}
-	.intro-subtitle {
-		font-weight: 800;
-	}
+    .section-title {
+        color: var(--accent);
+    }
+    .intro-subtitle {
+        font-weight: 800;
+    }
 
-	@media only screen and(min-width:$v-9) {
-		padding-right: 1.5rem;
-		flex: 1;
-		align-items: flex-start;
+    @media only screen and(min-width:$v-9) {
+        padding-right: 1.5rem;
+        flex: 1;
+        align-items: flex-start;
 
-		.intro-title,
-		.intro-subtitle,
-		.intro-paragraph {
-			max-width: 40rem;
-		}
-	}
+        .intro-title,
+        .intro-subtitle,
+        .intro-paragraph {
+            max-width: 40rem;
+        }
+    }
 }
 .intro-right {
-	margin-top: 10rem;
+    margin-top: 10rem;
 
-	@media only screen and(min-width:$v-9) {
-		flex: 1.3;
-		margin-top: 7rem;
-		padding-left: 1.5rem;
-		.intro-image {
-			max-width: 65rem;
-		}
-	}
+    @media only screen and(min-width:$v-9) {
+        flex: 1.3;
+        margin-top: 7rem;
+        padding-left: 1.5rem;
+        .intro-image {
+            max-width: 65rem;
+        }
+    }
 
-	.intro-image {
-		width: 100%;
+    .intro-image {
+        width: 100%;
 
-		border-radius: 3px;
-		overflow: hidden;
-	}
+        border-radius: var(--br-sm);
+        overflow: hidden;
+    }
 
-	.intro-image-container {
-		z-index: 10;
-		position: relative;
-	}
-	.intro-image-container::after {
-		content: '';
-		width: 100%;
+    .intro-image-container {
+        z-index: 10;
+        position: relative;
+    }
+    .intro-image-container::after {
+        content: '';
+        width: 100%;
 
-		height: 100%;
-		position: absolute;
-		top: -3.5rem;
-		left: 3.5rem;
-		background-color: var(--primary);
-		border-radius: 3px;
-		z-index: -1;
-	}
+        height: 100%;
+        position: absolute;
+        top: -3.5rem;
+        left: 3.5rem;
+        background-color: var(--primary);
+        border-radius: var(--br-sm);
+        z-index: -1;
+    }
 }

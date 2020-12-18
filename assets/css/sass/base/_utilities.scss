@@ -1,20 +1,15 @@
-.spacing-sm > * + * {
-	margin-top: 1.5rem;
-}
 .spacing > * + * {
-	margin-top: 2.5rem;
+    margin-top: var(--spacer, 2.5rem);
 }
-.spacing-lg > * + * {
-	margin-top: 3.5rem;
-}
+
 @mixin fillPage {
-	min-height: 91vh;
-	@media only screen and(max-width:$vp-6) {
-		min-height: 82vh;
-	}
+    min-height: 91vh;
+    @media only screen and(max-width:$vp-6) {
+        min-height: 82vh;
+    }
 }
 .container {
-	width: 85%;
-	max-width: 120rem;
-	margin: 0 auto;
+    width: 85%;
+    max-width: 120rem;
+    margin: 0 auto;
 }

@@ -6,8 +6,19 @@
     --tertiary: #00f0b5;
     --white: #fcfcfc;
 
+    --gradient: linear-gradient(
+        90deg,
+        rgb(57, 21, 93) 0%,
+        rgb(60, 23, 97) 50%,
+        rgb(70, 24, 119) 100%
+    );
+
     --font-header: #30233d;
     --font-para: #776c82;
+
+    --br-sm: 0.5rem;
+    --br-md: 1.5rem;
+    --br-lg: 4rem;
 }
 
 $v-4k: 156.25em; //2500
