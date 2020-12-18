@@ -1,72 +1,74 @@
 .container-showcase {
-	background-color: var(--primary);
+    background-color: var(--primary);
 
-	background-image: linear-gradient(
-			90deg,
-			rgba(57, 21, 93, 0.418) 0%,
-			rgba(60, 23, 97, 0.507) 50%,
-			rgba(82, 29, 138, 0.596) 100%
-		),
-		url(/assets/images/background.jpg);
-	background-attachment: fixed;
-	background-position: center;
-	background-size: cover;
-	position: relative;
+    background-image: linear-gradient(
+            90deg,
+            rgba(57, 21, 93, 0.418) 0%,
+            rgba(60, 23, 97, 0.507) 50%,
+            rgba(82, 29, 138, 0.596) 100%
+        ),
+        url(/assets/images/background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 
 .showcase {
-	padding: 20em 0;
+    padding-top: 15em;
+    padding-bottom: 20em;
 
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
-	justify-content: center;
-	@media only screen and(min-width:$v-8) {
-		min-height: 100vh;
-		padding: 0;
-	}
+    justify-content: center;
+    @media only screen and(min-width:$v-8) {
+        min-height: 100vh;
+        padding: 0;
+    }
 }
 .showcase-heading {
-	margin-top: -8.5rem;
-
-	.primary-title {
-		width: 100%;
-		max-width: 70rem;
-	}
+    @media only screen and(min-width:$v-8) {
+        margin-top: -10rem;
+    }
+    .primary-title {
+        width: 100%;
+        max-width: 70rem;
+    }
 }
 .showcase-cta {
-	position: absolute;
-	left: 0;
-	top: 70%;
-	width: 75%;
-	max-width: 90rem;
+    position: absolute;
+    left: 0;
+    top: 70%;
+    width: 75%;
+    max-width: 90rem;
 
-	padding: 2.5rem;
-	padding-left: 7.5%;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+    padding: 2.5rem;
+    padding-left: 7.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-	border-radius: 3px;
-	border: 1px solid rgba(255, 255, 255, 0.25);
-	border-left: 0;
+    border-radius: var(--br-sm);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-left: 0;
 
-	@media only screen and(min-width:$v-8) {
-		top: 65%;
-	}
-	.btn-showcase {
-		border-radius: 50%;
-		background: rgba(196, 196, 196, 0.05);
-		border: 1px solid rgba(255, 255, 255, 0.5);
-		display: flex;
-		align-items: center;
-		padding: 1.5rem;
-		cursor: pointer;
+    @media only screen and(min-width:$v-8) {
+        top: 65%;
+    }
+    .btn-showcase {
+        border-radius: 50%;
+        background: rgba(196, 196, 196, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        display: flex;
+        align-items: center;
+        padding: 1.5rem;
+        cursor: pointer;
 
-		svg {
-			width: 2.5rem;
-			height: 2.5rem;
-			stroke: var(--white);
-		}
-	}
+        svg {
+            width: 2.75rem;
+            height: 2.75rem;
+            stroke: var(--white);
+        }
+    }
 }
