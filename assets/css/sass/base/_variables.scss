@@ -1,13 +1,13 @@
 :root {
-	--primary: #30124e;
-	--primary-light: #5e239d;
-	--secondary: #150433;
-	--accent: #f61067;
-	--tertiary: #00f0b5;
-	--white: #fcfcfc;
+    --primary: #30124e;
+    --primary-light: #5e239d;
+    --secondary: #150433;
+    --accent: #f61067;
+    --tertiary: #00f0b5;
+    --white: #fcfcfc;
 
-	--font-header: #30233d;
-	--font-para: #776c82;
+    --font-header: #30233d;
+    --font-para: #776c82;
 }
 
 $v-4k: 156.25em; //2500
@@ -18,7 +18,6 @@ $v-12: 75em; //1200
 $v-10: 65.625em; //1050
 $v-9: 59.375em; //950
 $v-8: 50em; //800
-//$v-7: 37.5em; //600
 $v-7: 43.75em; //700
 $v-5: 31.25em; //500
 $v-3: 21.875em; //350
